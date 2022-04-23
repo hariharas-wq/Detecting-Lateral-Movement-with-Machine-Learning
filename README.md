@@ -90,6 +90,4 @@
 
   
 
-## Known Issues
-* This tool supports Windows commands executed via cmd.exe. Any command via PowerShell are not logged nor monitored.
-* Client tool has an issue when handling command line includes "/c" or "/k".
+
