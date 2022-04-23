@@ -2,7 +2,7 @@
   Detecting Lateral Movement with Machine Learning.  
   DetectLM is a proof of concept code to analyze and detect malicious commands executed via cmd.exe with machine learning.    
 
-  ![DetectLM Architecture](images/system.png)
+  
 
 * **DetectLM.py**: Runs on server. Detect malicious Windows command execution using machine learning and blacklist.
 * **Invoke-DetectLM.ps1**: Runs on client. Sends the logs to the Elasticsearch. Confirm analysis result and display alert message.
@@ -69,7 +69,7 @@
   Executed command logs can be checked from Kibana.  
   AlertLevel 2 is the malicious commands.
 
-  ![Kibana GUI](images/kibana.png)
+ 
 
 ### AlertLevel
   The log has three levels of detection level  
@@ -82,13 +82,13 @@
   When malicious Windows command execution is detected by machine learning, a notification will be sent to the client.  
   A user also can set a ignore flag to specific command execution when asked by client tool.  
 
-  ![Alert example](images/alert.png)
+
 
 ### Dashboard
   Using Kibana dashboard, logs are visualized.  
   Example of dashboard is in **kibana_objects**. Import is [Management -> Saved Objects -> Import]
 
-  ![Kibana dashbord](images/kibana_dashboard.png)
+  
 
 ## Known Issues
 * This tool supports Windows commands executed via cmd.exe. Any command via PowerShell are not logged nor monitored.
